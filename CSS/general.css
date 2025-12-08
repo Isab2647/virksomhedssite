@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Yeon_Sung";
+  src: url("../fonts/Yeon_Sung/YeonSung-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tasa_Orbiter";
+  src: url("../fonts/TASA_Orbiter/static/TASAOrbiter-Bold.ttf");
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Tasa_Orbiter";
+  src: url("../fonts/TASA_Orbiter/static/TASAOrbiter-Regular.ttf");
+  font-style: light;
+}
+
+@font-face {
+  font-family: "Tasa_Orbiter";
+  src: url("../fonts/TASA_Orbiter/static/TASAOrbiter-Medium.ttf");
+  font-style: medium;
+}
+
+/* fonts */
+:root {
+  --font-family-hero: "Yeon_Sung";
+  --font-family-body: "Tasa_Orbiter";
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-hero: 400;
+}
+
+h1 {
+  font-family: var(--font-family-hero);
+  font-weight: var(--font-weight-hero);
+}
+
+h2 {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-light);
+}
+
+p {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-medium);
+}
+
+/* farver */
+
+:root {
+  --color-bg: #f7f7f7;
+  --color-blue: #1f3971;
+  --color-red: #c91232;
+  --color-black: #181a23;
+  --color-grey: #838383;
+}
