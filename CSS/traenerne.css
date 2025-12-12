@@ -1,0 +1,29 @@
+/* overskrift - mød trænerne */
+h2 {
+}
+
+.dan {
+  background-color: #1f3971;
+  color: white;
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border-radius: 54px;
+}
+
+.traenerimg {
+  height: 295px;
+  width: 200px;
+  border-radius: 54px;
+  border: 4px, solid, #1f3971;
+  margin: 0 2em;
+}
+
+.card_title .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+}
