@@ -19,8 +19,11 @@ h2 {
   padding: 0.5em 1.5em 0.5em 1.5em;
 }
 
-img {
-  width: 100%;
+main img {
+  justify-content: center;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -28,6 +31,6 @@ img {
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
+    gap: 6rem;
   }
 }
