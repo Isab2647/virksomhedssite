@@ -1,7 +1,22 @@
+/* main kan slettes er bare for at se  */
+main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 1rem;
+}
 .blå_boks {
   background-color: var(--color-blue);
   color: var(--color-bg);
   border-radius: 20px;
+}
+p,
+h2 {
+  margin: 0.5em 1em 0.5em 1em;
+  padding: 0.5em 1.5em 0.5em 1.5em;
 }
 
 img {
