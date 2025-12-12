@@ -1,3 +1,77 @@
-main {
-  background-color: aqua;
+.dropdown {
+  width: 40%;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+.dropdown input[type="checkbox"] {
+  display: none;
+}
+
+.dropbtn {
+  background-color: #c5d2e3;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  box-sizing: border-box;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.dropdown-content p {
+  margin: 12px 0;
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+}
+
+.dropdown input[type="checkbox"]:checked + label + .dropdown-content {
+  max-height: 500px;
+  padding: 15px 20px;
+}
+
+.overlay {
+  display: grid;
+}
+
+.overlay * {
+  grid-area: 1/1;
+  place-self: center;
+  color: var(--color-bg);
+}
+
+.overlay p {
+  padding: 2em;
+}
+
+.overlay .card-btn {
+  position: absolute;
+  color: var(--color-blue); /* hvis du vil have den synlig */
+}
+
+.cards2 {
+  background-color: var(--color-blue);
+  opacity: 60%;
+  border-radius: 20px;
+  padding: 2em;
+  height: 150px;
+  color: var(--color-bg);
+}
+
+.card-btn p{
+  opacity: 100%;
 }
