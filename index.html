@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/photo_carousel.css" />
   </head>
   <body>
-    <h1>hej med dig</h1>
-    <h2>tillykke med dagen</h2>
-    <h3>håber du har en god dag</h3>
-    <p>hilsen din fantsiske gruppe!</p>
-    <p>hallo</p>
+    <div class="carousel">
+      <button class="carousel-btn carousel-btn--prev">&lt;</button>
+      <div class="carousel_track-container">
+        <ul class="carousel-track">
+          <li class="carousel-slide current-slide"><img src="Imgs/forside/hero.png" alt="" /></li>
+          <li class="carousel-slide"><img src="Imgs/forside/hero_2.png" alt="" /></li>
+          <li class="carousel-slide"><img src="Imgs/forside/hero_3.png" alt="" /></li>
+          <li class="carousel-slide"><img src="Imgs/Facebook_billeder/traenerhero.jpg" alt="" /></li>
+          <li class="carousel-slide"><img src="Imgs/Facebook_billeder/Kamp.jpg" alt="" class="kamp2" /></li>
+        </ul>
+      </div>
+      <button class="carousel-btn carousel-btn--next">&gt;</button>
+      <div class="carousel_nav">
+        <button class="carousel_indicator current-slide"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+      </div>
+    </div>
   </body>
   <script src="JAVA/login.js"></script>
+  <script src="JAVA/index.js"></script>
 </html>
