@@ -1,0 +1,37 @@
+/* main kan slettes er bare for at se  */
+main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 1rem;
+}
+.blå_boks {
+  background-color: var(--color-blue);
+  color: var(--color-bg);
+  border-radius: 20px;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+p,
+h2,
+li {
+  margin: 0.5em 1em 0.5em 1em;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+}
+@media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+  }
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+  }
+}
