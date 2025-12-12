@@ -1,0 +1,18 @@
+.blå_boks {
+  background-color: var(--color-blue);
+  color: var(--color-bg);
+  border-radius: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+  }
+}
