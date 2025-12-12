@@ -1,13 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="CSS/general.css">
-</head>
-<body>
-    
-</body>
-<script src="JAVA/login.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sundby Taekwondo Klub - Tilmelding</title>
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/tilmelding.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="flex">
+          <ul class="nav1">
+            <li><a href="kalender.html">Kalender</a></li>
+            <li>|</li>
+            <li><a href="tilmelding.html">Tilmelding</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="flex2">
+        <img src="Imgs/taekwondo_logo.png" alt="Taekwondo logo" class="logo" />
+        <h1>Sundby teakwondo klub</h1>
+      </div>
+      <nav>
+        <ul class="nav2">
+          <li><a href="om_klubben.html">Om klubben</a></li>
+          <li><a href="traenerne.html">Mød trænerne</a></li>
+          <li><a href="taekwondo.html">Om taekwondo</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form aria-label="Tilmeldingsblanket til Sundby Taekwondo Klub">
+        <div class="grid_2-1">
+          <div class="grid_1-1">
+            <div class="form-group">
+              <label for="first_name">Fornavn</label>
+              <input type="text" id="first_name" name="first_name" aria-describedby="fname-error" required />
+              <p class="error-message" id="fname-error">Indtast venligst en værdi</p>
+            </div>
+
+            <div class="form-group">
+              <label for="last_name">Efternavn</label>
+              <input type="text" id="last_name" name="last_name" aria-describedby="lname-error" required />
+              <p class="error-message" id="lname-error">Indtast venligst en værdig</p>
+            </div>
+
+            <div class="form-group address">
+              <label for="address">Adresse</label>
+              <input type="text" id="address" name="address" aria-describedby="address-error" required />
+              <p class="error-message" id="address-error">Indtast venligst en værdi</p>
+            </div>
+
+            <div class="form-group">
+              <label for="floor">Etage, side, el. lign</label>
+              <input type="text" name="floor" id="floor" />
+            </div>
+
+            <div class="form-group">
+              <label for="postal-code">Postnummer</label>
+              <input type="number" name="postal-code" id="postal-code" aria-describedby="postal-error" required />
+              <p class="error-message" id="postal-error">Indtast venligst en værdi</p>
+            </div>
+
+            <div class="form-group email">
+              <label for="email">Email</label>
+              <input type="email" id="email" aria-describedby="email-error" required />
+              <p class="error-message" id="email-error">Indtast en gyldig email</p>
+            </div>
+          </div>
+
+          <div class="grid_1">
+            <div class="form-group">
+              <label for="age">Alder</label>
+              <input type="number" id="age" name="age" aria-describedby="age-error" required />
+              <p class="error-message" id="age-error">Intast en gyldig fødselsdag</p>
+            </div>
+
+            <div class="form-group">
+              <label for="gender">Køn</label>
+              <select name="gender" id="gender" aria-describedby="gender-error" required>
+                <option value="">--Vælg et køn--</option>
+                <option value="Pige">Pige</option>
+                <option value="Dreng">Dreng</option>
+                <option value="Andet">Andet</option>
+                <option value="">Vil ikke oplyse</option>
+              </select>
+              <p class="error-message" id="gender-error">Venligst vælg et køn</p>
+            </div>
+
+            <div class="form-group">
+              <label for="phone-number">Telefonnummer</label>
+              <input type="phone" name="phone-number" id="phone-number" aria-describedby="phone-error" required />
+              <p class="error-message" id="phone-error">Venligst indtast en værdi</p>
+            </div>
+
+            <div class="form-group">
+              <label for="team">Hold</label>
+              <select name="team" id="team" aria-describedby="team-error" required>
+                <option value="">--Vælg et hold--</option>
+                <option value="Panda-Holdet">Panda Holdet</option>
+                <option value="Tiger-Holdet">Tiger Holdet</option>
+                <option value="Love-Holdet">Løve Holdet</option>
+                <option value="Voksenholdet">Voksenholdet</option>
+              </select>
+              <p class="error-message" id="team-error">Venligst vælg et hold</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid_2-1">
+          <div>
+            <div class="form-group">
+              <label for="accept-member"
+                >Accepter medlemsbetingelser
+                <input type="checkbox" name="accept-member" id="accept-member" value="Ja" aria-describedby="member-error" />
+              </label>
+              <p class="error-message" id="member-error">Sæt venligst kryds i boksen</p>
+            </div>
+
+            <div class="form-group">
+              <label for="accept-person"
+                >Accepter persondatabetingelser
+                <input type="checkbox" name="accept-person" id="accept-person" value="Ja" aria-describedby="person-error" />
+              </label>
+              <p class="error-message" id="person-error">Sæt venligst kryds i boksen</p>
+            </div>
+          </div>
+          <button>Tilmeld</button>
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="JAVA/login.js"></script>
 </html>
