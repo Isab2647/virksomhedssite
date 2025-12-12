@@ -48,7 +48,7 @@ h3 {
   font-weight: var(--font-weight-medium);
 }
 
-p {
+p, li {
   font-family: var(--font-family-body);
   font-weight: var(--font-weight-light);
 }
@@ -66,6 +66,7 @@ p {
 .nav1 {
   display: flex;
   list-style: none;
+  gap: 1em;
 }
 
 .nav1 a {
@@ -111,7 +112,7 @@ header {
 .section1 {
   margin: 3em 2em 1em;
   background-color: #1f3971;
-  color: white;
+  color: var(--color-bg);
   padding-left: 1em;
   padding-top: 0.1px;
   padding-right: 1em;
@@ -141,7 +142,7 @@ header {
 .card_title {
   background-color: var(--color-blue);
   border-radius: 20px;
-  color: white;
+  color: var(--color-bg);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   width: 85%;
@@ -165,18 +166,21 @@ header {
 }
 
 .cards {
+  position: relative;
   width: 80%;
   margin: 0 auto;
 }
 
 .cards img {
+  width: 100%;
   border-radius: 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  display: block;
 }
 
 .margin {
-  padding-top: 3em;
+  padding-top: 4em;
 }
 
 .provetime {
@@ -184,3 +188,20 @@ header {
   display: flex;
   justify-content: center;
 }
+
+.card-btn {
+  position: absolute;
+  bottom: -10px;
+  right: -105px;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: var(--color-bg);
+  color: var(--color-blue);
+  border-radius: 20px;
+  padding-left: 2em;
+  padding-right: 2em;
+  border: 2px solid var(--color-red);
+  width: 50%;
+  font-size: large;
+}
+
