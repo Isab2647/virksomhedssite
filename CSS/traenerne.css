@@ -1,0 +1,46 @@
+/* overskrift - mød trænerne */
+.h2traenerne {
+  margin-bottom: 3em;
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-light);
+  color: var(--color-blue);
+  text-align: center;
+}
+
+.h3navne {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-light);
+  color: var(--color-blue);
+  text-align: center;
+}
+/* 
+.cheftraener {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  justify-content: center; */
+
+.dan {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  align-items: center;
+  background-color: var(--color-blue);
+  color: white;
+  padding: 0.5em 5em;
+  border-radius: 54px;
+  position: absolute;
+}
+.traenerimg {
+  height: 295px;
+  width: 200px;
+  border-radius: 54px;
+  border: 4px, solid, #1f3971;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+h3 {
+}
