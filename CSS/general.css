@@ -62,3 +62,23 @@ p {
   --color-black: #181a23;
   --color-grey: #838383;
 }
+
+.nav1 {
+  display: flex;
+  list-style: none;
+}
+
+.nav1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav1 p {
+  padding: 0 0.5em;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: end;
+}
