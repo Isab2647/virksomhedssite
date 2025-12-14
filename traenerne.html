@@ -6,28 +6,34 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/traenerne.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
   </head>
-
   <header>
-    <nav>
-      <div class="flex">
-        <ul class="nav1">
-          <li><a href="kalender.html">Kalender</a></li>
-          <p>|</p>
-          <li><a href="tilmelding.html">Tilmelding</a></li>
-        </ul>
+    <nav class="main-nav">
+      <ul class="nav-top desktop-only">
+        <li><a href="kalender.html">Kalender</a></li>
+        <li>|</li>
+        <li><a href="tilmelding.html">Tilmelding</a></li>
+      </ul>
+
+      <div class="logo-area">
+        <img src="Imgs/taekwondo_logo.png" alt="Taekwondo logo" class="logo" />
+        <h1>Sundby taekwondo klub</h1>
       </div>
-    </nav>
-    <div class="flex2">
-      <img src="" alt="" />
-      <p>Sundby teakwondo klub</p>
-    </div>
-    <nav>
-      <ul>
+
+      <ul class="nav-main">
         <li><a href="om_klubben.html">Om klubben</a></li>
         <li><a href="traenerne.html">Mød trænerne</a></li>
         <li><a href="taekwondo.html">Om taekwondo</a></li>
+        <li><a href="kalender.html">Kalender</a></li>
+        <li><a href="tilmelding.html">Tilmelding</a></li>
       </ul>
+
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
     </nav>
   </header>
 
@@ -134,4 +140,5 @@
     </section>
   </body>
   <script src="JAVA/login.js"></script>
+  <script src="JAVA/burger.js"></script>
 </html>
