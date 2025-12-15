@@ -15,18 +15,41 @@ main {
 }
 img {
   width: 100%;
+}
+main img:not(.dobok, .bælter) {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
   border-radius: 10px;
+  display: block;
+}
+.dobok {
+  width: 400px;
+  display: block;
+  margin: 1em auto;
+}
+.bælter {
+  height: 400px;
+  display: block;
+  margin: 1em auto;
 }
 p,
 h2 {
   margin: 0.5em 1em 0.5em 1em;
   padding: 0.5em 1.5em 0.5em 1.5em;
 }
+@media (max-width: 800px) {
+  img {
+    display: block;
+    margin: 1em auto;
+  }
+}
 @media (min-width: 800px) {
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
+    justify-content: center;
   }
   .grid_2-1 {
     display: grid;
