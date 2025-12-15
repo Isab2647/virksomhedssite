@@ -1,3 +1,12 @@
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 1rem;
+}
 .dropdown {
   width: 40%;
   margin: 40px auto;
@@ -114,7 +123,7 @@
   padding-bottom: 0.5em;
   width: 85%;
   margin: 0 auto;
-  position: absolute;
+  /* position: absolute; */
   left: 7%;
   z-index: 10;
   transform: translateY(-50%);
@@ -171,14 +180,21 @@
   width: 50%;
   font-size: large;
 }
-.section1,
-.section2,
-.section3 {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: 100vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  row-gap: 1rem;
+
+@media (max-width: 800px) {
+  .card_title {
+    position: absolute;
+  }
+}
+@media (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
 }
