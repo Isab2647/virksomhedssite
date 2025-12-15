@@ -6,28 +6,35 @@
     <title>Sundby Taekwondo Klub - Tilmelding</title>
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/tilmelding.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="flex">
-          <ul class="nav1">
-            <li><a href="kalender.html">Kalender</a></li>
-            <li>|</li>
-            <li><a href="tilmelding.html">Tilmelding</a></li>
-          </ul>
+      <nav class="main-nav">
+        <ul class="nav-top desktop-only">
+          <li><a href="kalender.html">Kalender</a></li>
+          <li>|</li>
+          <li><a href="tilmelding.html">Tilmelding</a></li>
+        </ul>
+
+        <div class="logo-area">
+          <img src="Imgs/taekwondo_logo.png" alt="Taekwondo logo" class="logo" />
+          <h1>Sundby taekwondo klub</h1>
         </div>
-      </nav>
-      <div class="flex2">
-        <img src="Imgs/taekwondo_logo.png" alt="Taekwondo logo" class="logo" />
-        <h1>SUNDBY TAEKWONDO KLUB</h1>
-      </div>
-      <nav>
-        <ul class="nav2">
+
+        <ul class="nav-main">
           <li><a href="om_klubben.html">Om klubben</a></li>
           <li><a href="traenerne.html">Mød trænerne</a></li>
           <li><a href="taekwondo.html">Om taekwondo</a></li>
+          <li><a href="kalender.html">Kalender</a></li>
+          <li><a href="tilmelding.html">Tilmelding</a></li>
         </ul>
+
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </nav>
     </header>
     <main>
@@ -155,4 +162,5 @@
     <footer></footer>
   </body>
   <script src="JAVA/login.js"></script>
+  <script src="JAVA/burger.js"></script>
 </html>

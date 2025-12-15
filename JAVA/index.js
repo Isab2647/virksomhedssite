@@ -68,10 +68,21 @@ const stopAutoPlay = () => {
 
 startAutoPlay();
 
+let pauseTimeout;
+
 const pauseAutoPlayTemporarily = () => {
   stopAutoPlay();
 
-  setTimeout(startAutoPlay, 5000);
+  // ⭐ Ryd gammel timeout hvis den eksisterer ⭐
+  if (pauseTimeout) {
+    clearTimeout(pauseTimeout);
+  }
+
+  // ⭐ Gem den nye timeout så vi kan rydde den senere ⭐
+  pauseTimeout = setTimeout(() => {
+    startAutoPlay();
+    pauseTimeout = null; // Nulstil efter brug
+  }, 5000);
 };
 
 nextBtn.addEventListener("click", (e) => {
@@ -101,3 +112,14 @@ dotsNav.addEventListener("click", (e) => {
 const carousel = document.querySelector(".carousel");
 carousel.addEventListener("mouseenter", stopAutoPlay);
 carousel.addEventListener("mouseleave", startAutoPlay);
+
+// dropdown//
+
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+
+burger.addEventListener("click", burgerClick);
+function burgerClick() {
+  burger.classList.toggle("active");
+  nav.classList.toggle("active");
+}

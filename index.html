@@ -6,28 +6,36 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/photo_carousel.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="flex">
-          <ul class="nav1">
-            <li><a href="kalender.html">Kalender</a></li>
-            <li>|</li>
-            <li><a href="tilmelding.html">Tilmelding</a></li>
-          </ul>
+      <nav class="main-nav">
+        <ul class="nav-top desktop-only">
+          <li><a href="kalender.html">Kalender</a></li>
+          <li>|</li>
+          <li><a href="tilmelding.html">Tilmelding</a></li>
+        </ul>
+
+        <div class="logo-area">
+          <img src="Imgs/taekwondo_logo.png" alt="Taekwondo logo" class="logo" />
+          <h1>Sundby taekwondo klub</h1>
         </div>
-      </nav>
-      <div class="flex2">
-        <img src="Imgs/taekwondo_logo.png" alt="Taekwondo logo" class="logo" />
-        <h1>Sundby teakwondo klub</h1>
-      </div>
-      <nav>
-        <ul class="nav2">
+
+        <ul class="nav-main">
           <li><a href="om_klubben.html">Om klubben</a></li>
           <li><a href="traenerne.html">Mød trænerne</a></li>
           <li><a href="taekwondo.html">Om taekwondo</a></li>
+          <li><a href="kalender.html">Kalender</a></li>
+          <li><a href="tilmelding.html">Tilmelding</a></li>
         </ul>
+
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </nav>
     </header>
 
@@ -67,13 +75,8 @@
         <div>
           <h2 class="">Hvad er taekwondo</h2>
           <p>
-            Taekwondo er en koreansk kampkunst, som kan føre sin historie mere
-            end 2000 år tilbage. Dengang brugte man Taekwondo til at forsvare
-            sig mod angreb fra dyr og senere også mod fjendtlige angreb fra
-            mennesker. Taekwondo har efterhånden udviklet sig til en
-            international anerkendt sportsgren, og har således været med i de
-            Olympiske Lege siden 1988. For mange er Taekwondo meget mere end en
-            actionfyldt kampsport.
+            Taekwondo er en koreansk kampkunst, som kan føre sin historie mere end 2000 år tilbage. Dengang brugte man Taekwondo til at forsvare sig mod angreb fra dyr og senere også mod fjendtlige angreb fra mennesker. Taekwondo har efterhånden
+            udviklet sig til en international anerkendt sportsgren, og har således været med i de Olympiske Lege siden 1988. For mange er Taekwondo meget mere end en actionfyldt kampsport.
           </p>
           <div class="figur">
             <button>Læs mere</button>
@@ -89,87 +92,95 @@
             <div class="card_title">
               <h3>Pandahold</h3>
               <p>Mandag kl. 16</p>
-              <p>12 - 17 årige</p>
+              <p>5 - 9 år</p>
             </div>
             <div class="cards">
               <img src="Imgs/forside/forside_1.png" alt="" />
-            </div>
-            <div>
-              <button>tryk</button>
+              <button class="card-btn">Tilmeld</button>
             </div>
           </div>
 
           <div class="margin">
             <div class="card_title">
-              <h3>Pandahold</h3>
-              <p>Mandag kl. 16</p>
-              <p>12 - 17 årige</p>
+              <h3>Løvehold</h3>
+              <p>Onsdag kl. 16</p>
+              <p>9 - 13 år</p>
             </div>
             <div class="cards">
-              <img src="Imgs/forside/forside_2.png" alt="" />
-            </div>
-            <div>
-              <button>tryk</button>
+              <img src="Imgs/forside/forside_1.png" alt="" />
+              <button class="card-btn">Tilmeld</button>
             </div>
           </div>
 
           <div class="margin">
             <div class="card_title">
-              <h3>Pandahold</h3>
-              <p>Mandag kl. 16</p>
-              <p>12 - 17 årige</p>
+              <h3>Tigerhold</h3>
+              <p>Mandag kl. 17:30</p>
+              <p>14 - 17 år</p>
             </div>
             <div class="cards">
-              <img src="Imgs/forside/forside_3.png" alt="" />
-            </div>
-            <div>
-              <button>tryk</button>
+              <img src="Imgs/forside/forside_1.png" alt="" />
+              <button class="card-btn">Tilmeld</button>
             </div>
           </div>
 
           <div class="margin">
             <div class="card_title">
-              <h3>Pandahold</h3>
-              <p>Mandag kl. 16</p>
-              <p>12 - 17 årige</p>
+              <h3>Voksenhold</h3>
+              <p>Torsdag kl. 18:30</p>
             </div>
             <div class="cards">
-              <img src="Imgs/forside/forside_4.JPG" alt="" />
+              <img src="Imgs/forside/forside_1.png" alt="" />
+              <button class="card-btn">Tilmeld</button>
             </div>
-            <div>
-              <button>tryk</button>
-            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle" class="dropbtn">Vidste du at... ▼</label>
+          <div class="dropdown-content">
+            <p>- Lorem ipsum dolor sit amet.</p>
+            <p>- Lorem, ipsum dolor.</p>
+            <p>- Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>- Lorem ipsum dolor sit amet consectetur.</p>
+            <p>- Lorem, ipsum.</p>
           </div>
         </div>
       </section>
       <section>
         <div>
-          <div>
-            <h3>Om klubben</h3>
-            <div>
-              <p>iegceigfeh</p>
+          <div class="margin">
+            <div class="card_title">
+              <h3>Om klubben</h3>
+            </div>
+
+            <div class="cards cards2">
+              <h3>Klubben er multikulturel med medlemmer fra forskellige religioner og sociale lag og består ligeligt fordelt af både piger og drenge, hvor alle er lige.</h3>
+              <button class="card-btn">Tilmeld</button>
             </div>
           </div>
-          <div>
-            <button>tryk</button>
-          </div>
-          <div>
-            <h3>Mød trænerne</h3>
-            <div>
-              <p>iegceigfeh</p>
+
+          <div class="margin">
+            <div class="card_title">
+              <h3>Mød trænerne</h3>
+            </div>
+
+            <div class="cards cards2">
+              <h3>Se hvem din fremtidige træner kunne være og lær de 10 ansigter at kende.</h3>
+              <button class="card-btn">Tilmeld</button>
             </div>
           </div>
-          <div>
-            <button>tryk</button>
-          </div>
-          <div>
-            <h3>Facebook gruppe</h3>
-            <div>
-              <p>iegceigfeh</p>
+
+          <div class="margin">
+            <div class="card_title">
+              <h3>Facebook gruppe</h3>
             </div>
-          </div>
-          <div>
-            <button>tryk</button>
+
+            <div class="cards cards2">
+              <h3>Bliv en del af fællesskabet og tilmeld dig vores facebook gruppe</h3>
+              <button class="card-btn">Tilmeld</button>
+            </div>
           </div>
         </div>
       </section>
@@ -189,4 +200,5 @@
   </body>
   <script src="JAVA/login.js"></script>
   <script src="JAVA/index.js"></script>
+  <script src="JAVA/burger.js"></script>
 </html>

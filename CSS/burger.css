@@ -1,0 +1,138 @@
+.nav-main {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+  justify-content: center;
+}
+
+.nav-main a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-top {
+  display: flex;
+  align-self: end;
+  gap: 1em;
+  list-style: none;
+  padding: 1em;
+}
+.logo-area {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  justify-self: start;
+  width: 250px;
+  padding: 0 0 0 4em;
+}
+.logo-area h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 0 4em 0 0;
+}
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  display: none;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 1em;
+}
+
+/* Desktop */
+.desktop-only {
+  display: flex;
+}
+
+@media screen and (width < 800px) {
+  .nav-top,
+  .nav-main {
+    display: none;
+  }
+
+  nav.active .nav-main {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-blue);
+    border-radius: 10%;
+    width: 210px;
+    padding: 1.5em;
+    z-index: 100;
+  }
+
+  .burger {
+    display: block;
+    flex: 0 0 auto;
+    margin: 0 20px;
+    justify-self: end;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .nav-main li {
+    margin: 40px 20px;
+    text-align: right;
+  }
+  nav.active .nav-main a {
+    font-size: 24px;
+  }
+  .main-nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  .logo-area img {
+    width: 100px;
+    padding-bottom: 1em;
+  }
+  .nav-top {
+    justify-self: start;
+  }
+  .nav-main {
+    justify-self: end;
+  }
+  .logo-area h1 {
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+    font-size: 1.7rem;
+  }
+}
