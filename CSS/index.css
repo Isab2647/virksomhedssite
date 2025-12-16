@@ -226,9 +226,6 @@ main {
 
 @media (min-width: 800px) {
   .section1 {
-    width: 77%;
-    height: 50%;
-    margin-left: 12.5em;
     margin-top: 6em;
   }
 
@@ -264,11 +261,6 @@ main {
 
   .card-btn {
     right: -150px;
-  }
-
-  .provetime {
-    padding-top: 4em;
-    padding-bottom: 2em;
   }
 
   .dropbtn {
