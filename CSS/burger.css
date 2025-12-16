@@ -15,7 +15,8 @@
   align-self: end;
   gap: 1em;
   list-style: none;
-  padding: 1em;
+  padding: 0.5em;
+  margin: 0;
 }
 
 .nav-top a {
@@ -31,7 +32,7 @@
 }
 .logo {
   justify-self: start;
-  width: 200px;
+  width: 160px;
   padding: 0 0 0 4em;
 }
 .logo-area h1 {
