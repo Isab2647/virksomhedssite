@@ -6,3 +6,8 @@ main {
   display: grid;
   row-gap: 1rem;
 }
+
+.container {
+  display: block;
+  margin: 2em auto;
+}
