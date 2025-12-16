@@ -92,7 +92,28 @@
         <img src="Imgs/klubben/udstyr.webp" alt="klubben_8" />
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>SUNDBY TAEKWONDO KLUB <br />CVR-nummer: 34130183 <br />skt@sundbytaekwondo.dk</p>
+      <p>Adresse: Portugalsgade 13, 2300 København</p>
+      <img src="Imgs/free-mail-icon-142-thumb.png" alt="Et mail ikon" class="mail" />
+      <form aria-label="Kontakrformular til Sundby Taekwondo Klub">
+        <div class="form-group">
+          <label for="name">Fulde navn</label>
+          <input type="text" id="name" name="name" aria-describedby="name-error" required />
+          <p class="error-message" id="name-error">Indtast venligst en værdi</p>
+        </div>
+        <div class="form-group">
+          <label for="mail">Email</label>
+          <input type="mail" id="mail" aria-describedby="mail-error" required />
+          <p class="error-message" id="mail-error">Indtast en gyldig email</p>
+        </div>
+        <div class="form-group">
+          <label for="question">Spørgsmål</label>
+          <input type="text" type="question" id="question" class="question" />
+        </div>
+        <button>Indsend</button>
+      </form>
+    </footer>
   </body>
   <script src="JAVA/login.js"></script>
   <script src="JAVA/burger.js"></script>
