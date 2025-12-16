@@ -17,6 +17,12 @@
   list-style: none;
   padding: 1em;
 }
+
+.nav-top a {
+  text-decoration: none;
+  color: black;
+}
+
 .logo-area {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -25,7 +31,7 @@
 }
 .logo {
   justify-self: start;
-  width: 250px;
+  width: 200px;
   padding: 0 0 0 4em;
 }
 .logo-area h1 {
@@ -54,12 +60,16 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  gap: 1em;
 }
 /* Desktop */
 .desktop-only {
   display: flex;
 }
+
+.remove {
+  display: none;
+}
+
 @media screen and (width < 800px) {
   .nav-top,
   .nav-main {
@@ -82,6 +92,11 @@
     margin: 0 20px;
     justify-self: end;
   }
+
+  .remove {
+    display: block;
+  }
+
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
     transition: 0.2s linear;
