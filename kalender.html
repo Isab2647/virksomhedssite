@@ -6,6 +6,7 @@
     <title>Kalender</title>
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/burger.css" />
+    <link rel="stylesheet" href="CSS/kalender.css" />
   </head>
   <body>
     <header>
@@ -36,6 +37,33 @@
         </button>
       </nav>
     </header>
+    <main>
+      <div class="container">
+        <img src="Imgs/table2.jpg" alt="kalender" />
+      </div>
+    </main>
+    <footer>
+      <p>SUNDBY TAEKWONDO KLUB <br />CVR-nummer: 34130183 <br />skt@sundbytaekwondo.dk</p>
+      <p>Adresse: Portugalsgade 13, 2300 København</p>
+      <img src="Imgs/free-mail-icon-142-thumb.png" alt="Et mail ikon" class="mail" />
+      <form aria-label="Kontakrformular til Sundby Taekwondo Klub">
+        <div class="form-group">
+          <label for="name">Fulde navn</label>
+          <input type="text" id="name" name="name" aria-describedby="name-error" required />
+          <p class="error-message" id="name-error">Indtast venligst en værdi</p>
+        </div>
+        <div class="form-group">
+          <label for="mail">Email</label>
+          <input type="mail" id="mail" aria-describedby="mail-error" required />
+          <p class="error-message" id="mail-error">Indtast en gyldig email</p>
+        </div>
+        <div class="form-group">
+          <label for="question">Spørgsmål</label>
+          <input type="text" type="question" id="question" class="question" />
+        </div>
+        <button>Indsend</button>
+      </form>
+    </footer>
   </body>
   <script src="JAVA/login.js"></script>
   <script src="JAVA/burger.js"></script>
