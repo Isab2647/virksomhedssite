@@ -1,7 +1,9 @@
 .dropdown {
-  width: 40%;
+  width: 70%;
   margin: 40px auto;
   box-sizing: border-box;
+  padding-bottom: 3em;
+  padding-top: 3em;
 }
 
 .dropdown input[type="checkbox"] {
@@ -9,16 +11,17 @@
 }
 
 .dropbtn {
-  background-color: #c5d2e3;
-  color: rgb(0, 0, 0);
+  background-color: var(--color-bg);
+  color: var(--color-blue);
   padding: 12px 20px;
   font-size: 18px;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
   display: block;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
+  border: 2px solid var(--color-red);
 }
 
 .dropdown-content {
@@ -42,6 +45,25 @@
 .dropdown input[type="checkbox"]:checked + label + .dropdown-content {
   max-height: 500px;
   padding: 15px 20px;
+  border-radius: 20px;
+  background-color: var(--color-bg);
+
+  color: var(--color-blue);
+}
+
+.dropbtn::after {
+  content: "+";
+  position: absolute;
+  right: 115px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  transform: translateY(-10%);
+  color: var(--color-red);
+}
+
+.dropdown input[type="checkbox"]:checked + .dropbtn::after {
+  content: "−";
 }
 
 .overlay {
@@ -65,7 +87,6 @@
 
 .cards2 {
   background-color: var(--color-blue);
-  opacity: 60%;
   border-radius: 20px;
   padding: 2em;
   height: 150px;
@@ -107,6 +128,21 @@
 }
 
 .card_title {
+  background-color: var(--color-bg);
+  border-radius: 20px;
+  border: 2px solid var(--color-red);
+  color: var(--color-blue);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  left: 7%;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+/* .card_title2{
   background-color: var(--color-blue);
   border-radius: 20px;
   color: var(--color-bg);
@@ -118,7 +154,7 @@
   left: 7%;
   z-index: 10;
   transform: translateY(-50%);
-}
+} */
 
 .card_title p {
   margin: 0;
@@ -170,4 +206,121 @@
   border: 2px solid var(--color-red);
   width: 50%;
   font-size: large;
+}
+
+.taekwondo_mand {
+  width: 20%;
+  padding-bottom: 10px;
+}
+
+.taekwondo_mand2 {
+  width: 10%;
+}
+
+@media (min-width: 800px) {
+  .section1 {
+    width: 77%;
+    height: 50%;
+    margin-left: 12.5em;
+    margin-top: 6em;
+  }
+
+  .figur img {
+    width: 15%;
+  }
+
+  .desktop {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 100px;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .margin {
+    position: relative;
+  }
+
+  .cards {
+    position: relative;
+    width: 500px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .card_title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-51%);
+    width: 110%;
+  }
+
+  .card-btn {
+    right: -150px;
+  }
+
+  .provetime {
+    padding-top: 4em;
+    padding-bottom: 2em;
+  }
+
+  .dropbtn {
+    width: 42%;
+    transform: translateX(50%);
+    padding: 2em 0em 2em 1em;
+  }
+
+  .dropbtn::after {
+    right: 50px;
+  }
+
+  .dropdown {
+    margin-left: 23em;
+  }
+
+  .dropdown-content {
+    width: 42%;
+    left: 50px;
+  }
+
+  .desktop2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    justify-content: center;
+    align-items: start;
+    gap: 0;
+  }
+
+  .cards2 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .card_title2 p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card_title2 {
+    background-color: var(--color-bg);
+    border-radius: 20px;
+    border: 2px solid var(--color-red);
+    color: var(--color-blue);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    left: 7%;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+
+  .card_title2 h3 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
 }
