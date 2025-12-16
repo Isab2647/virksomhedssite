@@ -153,6 +153,28 @@ h2 {
   padding: 0 2em 0 0;
 }
 
+.mail {
+  width: 10%;
+  text-align: center;
+}
+
+footer {
+  margin: 2em;
+  border-top: 2px solid black;
+}
+
+footer form {
+  background-color: transparent;
+  color: black;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+.question {
+  height: 200px;
+}
+
 @media (width >= 800px) {
   .grid_1 {
     display: grid;
