@@ -236,13 +236,16 @@ main {
   }
 
   .section1 p {
-    max-width: 260px;
     border-radius: 20px;
     padding-left: 2em;
   }
 
   .figur img {
     width: 15%;
+  }
+
+  .figur {
+    justify-content: end;
   }
 
   .desktop {
