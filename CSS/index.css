@@ -10,7 +10,6 @@ main {
   width: 70%;
   margin: 40px auto;
   box-sizing: border-box;
-  padding-bottom: 3em;
   padding-top: 3em;
 }
 
@@ -62,7 +61,7 @@ main {
 .dropbtn::after {
   content: "+";
   position: absolute;
-  right: 115px;
+  right: 103px;
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 15px;
@@ -94,14 +93,17 @@ main {
 }
 
 .cards2 {
-  background-color: var(--color-blue);
+  background-color: rgba(31, 57, 113, 0.6);
   border-radius: 20px;
   padding: 2em;
   height: 150px;
   color: var(--color-bg);
+  aspect-ratio: 1 / 1; /* 🔥 Gør kortet kvadratisk */
+  width: 100%;
+  max-width: 300px;
 }
 
-.card-btn p {
+.card-btn h3 {
   opacity: 100%;
 }
 
@@ -136,10 +138,9 @@ main {
 }
 
 .card_title {
-  background-color: var(--color-bg);
+  background-color: var(--color-blue);
   border-radius: 20px;
-  border: 2px solid var(--color-red);
-  color: var(--color-blue);
+  color: var(--color-bg);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   width: 85%;
@@ -150,20 +151,7 @@ main {
   transform: translateY(-50%);
 }
 
-/* .card_title2{
-  background-color: var(--color-blue);
-  border-radius: 20px;
-  color: var(--color-bg);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  width: 85%;
-  margin: 0 auto;
-/* position: absolute; */
-/* left: 7%;
-  z-index: 10;
-  transform: translateY(-50%);
-} */
-*/ .card_title p {
+.card_title p {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -173,6 +161,22 @@ main {
   margin: 0;
   display: flex;
   justify-content: center;
+}
+
+.card_title p {
+  justify-self: center;
+  margin: 0;
+}
+
+.card_title2 {
+  justify-self: center;
+  background-color: var(--color-blue);
+  color: var(--color-bg);
+  border: 2px solid var(--color-blue);
+  border-radius: 20px;
+  margin: 0;
+  padding: 0 5em 0 5em;
+  transform: translateY(17px);
 }
 
 .cards {
@@ -202,7 +206,7 @@ main {
 .card-btn {
   position: absolute;
   bottom: -10px;
-  right: -105px;
+  right: -130px;
   transform: translateX(-50%);
   padding: 10px;
   background-color: var(--color-bg);
@@ -227,9 +231,14 @@ main {
 @media (min-width: 800px) {
   .section1 {
     width: 77%;
-    height: 50%;
-    margin-left: 12.5em;
     margin-top: 6em;
+    justify-self: center;
+  }
+
+  .section1 p {
+    max-width: 260px;
+    border-radius: 20px;
+    padding-left: 2em;
   }
 
   .figur img {
@@ -264,10 +273,10 @@ main {
 
   .card-btn {
     right: -150px;
+    z-index: 10;
   }
 
   .provetime {
-    padding-top: 4em;
     padding-bottom: 2em;
   }
 
@@ -282,7 +291,9 @@ main {
   }
 
   .dropdown {
-    margin-left: 23em;
+    width: 100%;
+    margin: 40px auto;
+    padding-left: 12em;
   }
 
   .dropdown-content {
@@ -301,7 +312,7 @@ main {
 
   .cards2 {
     width: 300px;
-    height: 300px;
+    height: 230px;
   }
 
   .card_title2 p {
@@ -329,5 +340,31 @@ main {
     margin: 0;
     display: flex;
     justify-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .margin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+  }
+
+  .card_title2 {
+    background-color: var(--color-blue);
+    color: var(--color-bg);
+    border: 2px solid var(--color-blue);
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    text-align: center;
+    width: 75%;
+    margin: 0;
+  }
+
+  .carousel {
+    max-width: 1400px;
+    margin: 0 auto;
   }
 }
