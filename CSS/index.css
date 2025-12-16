@@ -1,7 +1,6 @@
-.main {
+main {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -159,13 +158,12 @@
   padding-bottom: 0.5em;
   width: 85%;
   margin: 0 auto;
-  /* position: absolute; */
-  left: 7%;
+/* position: absolute; */
+/* left: 7%;
   z-index: 10;
   transform: translateY(-50%);
 } */
-
-.card_title p {
+*/ .card_title p {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -292,7 +290,7 @@
     left: 50px;
   }
 
-  .desktop2 {
+  .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 100px;
