@@ -219,6 +219,11 @@ main {
   font-size: large;
 }
 
+.card-btn a{
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
 .taekwondo_mand {
   width: 20%;
   padding-bottom: 10px;
