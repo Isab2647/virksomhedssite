@@ -219,7 +219,7 @@ main {
   font-size: large;
 }
 
-.card-btn a{
+.card-btn a {
   text-decoration: none;
   color: var(--color-blue);
 }
@@ -267,8 +267,6 @@ main {
 
   .cards {
     position: relative;
-    width: 500px;
-    aspect-ratio: 1 / 1;
   }
 
   .card_title {
@@ -276,7 +274,6 @@ main {
     top: 10px;
     left: 50%;
     transform: translateX(-51%);
-    width: 110%;
   }
 
   .card-btn {
