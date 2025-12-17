@@ -33,7 +33,7 @@ main img {
 .card-btn {
   position: absolute;
   bottom: -250px;
-  right:440px;
+  right: 440px;
   transform: translateX(-50%);
   padding: 10px;
   background-color: var(--color-bg);
@@ -46,7 +46,7 @@ main img {
   font-size: large;
 }
 
-.card-btn a{
+.card-btn a {
   text-decoration: none;
   color: var(--color-blue);
 }
