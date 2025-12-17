@@ -45,6 +45,10 @@ main {
   transform: translateX(-10%);
 }
 
+.title {
+  margin: 0;
+}
+
 @media (width > 800px) {
   .card-image {
     height: 449px;
